@@ -1,3 +1,4 @@
+// this is done with division operator
 package array;
 
 public class ProductOfArrayExceptSelf {
