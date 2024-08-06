@@ -20,7 +20,7 @@ package BinarySearch;
 public class SmallestLetter {
 
     public char nextGreatestLetter(char[] letters, char target) {
-        int start = 0;
+      int start = 0;
       int end = letters.length - 1;
   
       while (start <= end) {
