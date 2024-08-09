@@ -1,3 +1,0 @@
-sudo /opt/lampp/manager-linux-x64.run  -- to run the xampp gui 
-
-sudo lsof -i ':80' -- to check if apache is alredy running or not 
