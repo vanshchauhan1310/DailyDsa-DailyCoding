@@ -20,6 +20,8 @@ public class unionofarray {
            s.add(b[i]);
            
          System.out.println(s.size());
+
+         System.out.println(s);
            
  
  

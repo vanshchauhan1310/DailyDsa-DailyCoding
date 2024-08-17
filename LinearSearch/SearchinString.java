@@ -8,10 +8,9 @@ public class SearchinString {
         char target = 's';
 
         boolean ans = Search(name,target);
-        // System.out.println(ans);
+        System.out.println(ans);
 
-        System.out.println(Arrays.toString(name.toCharArray()));
-        System.out.println(name.toCharArray());
+      
     }
 
 

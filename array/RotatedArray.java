@@ -14,7 +14,7 @@ public class RotatedArray {
     }
     public static void main(String[] args) {
         int[] nums = {4,3,2,5,1};
-        int k = 3;
+        int k = 4;
         System.out.println("rotated array");
 
         int start = 0;
