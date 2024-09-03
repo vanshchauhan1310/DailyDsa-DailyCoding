@@ -3,12 +3,11 @@ const urlRouter = require("./Routes/url")
 const path = require("path");
 const db = require("./connect")
 const URL = require('./Models/url')
-
+const userRoute = require("./Routes/user")
 const app = express()
 const port = 8000
 
-// Correct view engine setup
-app.set('view engine', 'ejs')  // Changed from 'view-engine' to 'view engine'
+app.set('view engine', 'ejs')
 app.set("views", path.resolve("./Views"))
 
 app.use(express.json())
@@ -19,9 +18,14 @@ db("mongodb://localhost:27017")
   .catch((err) => console.log("Error connecting to MongoDB:", err))
 
 app.use("/url", urlRouter)
+app.use("/user", userRoute) 
 
 app.get('/', (req, res) => {
-  res.render('home')  // Changed from 'HOOME' to 'home', assuming your template is named 'home.ejs'
+  res.render('home') 
+})
+
+app.get('/signup',(req,res)=>{
+ return res.render('signup')
 })
 
 app.get('/:shortId', async (req, res) => {
