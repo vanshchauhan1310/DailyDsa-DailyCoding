@@ -6,17 +6,20 @@ const port = 3000
 
 app.use(express.json())
 
-app.use((req,res,next)=>{
-    console.log("Hello from custom middleware 1")
-    next()
-})
+// Middle ware 
+// app.use((req,res,next)=>{
+//     console.log("Hello from custom middleware 1")
+//     next()
+// })
 
-app.use((req,res,next)=>{
-    console.log("Hello from custom middleware 2")
-    return res.end("hey")
-})
+// app.use((req,res,next)=>{
+//     console.log("Hello from custom middleware 2")
+//     return res.end("hey")
+// })
 
 app.get('/api/user',(req,res)=>{
+    res.setHeader("X-MyName","Vansh")
+    console.log(res.header)
     return res.json(user)
 })
 
