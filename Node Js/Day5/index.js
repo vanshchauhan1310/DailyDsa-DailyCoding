@@ -6,6 +6,14 @@ const port = 3000
 
 app.use(express.json())
 
+// status code 
+
+// information Responses 100-199
+// Sucessful Response 200 - 299
+//redirectional response 300 - 399
+// client error 400 - 499
+// server error 500 - 599
+
 // Middle ware 
 // app.use((req,res,next)=>{
 //     console.log("Hello from custom middleware 1")
