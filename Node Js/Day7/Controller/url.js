@@ -1,7 +1,7 @@
 const shortid = require("shortid")
 const URL = require("../Models/url")
 
-async function handleGenratedURL(req,res){
+async function handleGeneratedURL(req,res){
     const body  = req.body;
     if(!body.url) return res.status(400).json({ error:'url is required'})
   
@@ -17,7 +17,17 @@ async function handleGenratedURL(req,res){
 
 }
 
-module.exports = handleGenratedURL;  //exporting the function to use in routes.js file
 
+async function handleGetAnalytics (req,res){
+    const shortId = req.params.shortId;
+    const result = await URL.findOne({shortId})
 
-
+    return res.json({
+        totalclicks: result.visitHistory.length,
+        analytics: result.visitHistory,
+    })
+}
+module.exports = {
+    handleGeneratedURL,
+    handleGetAnalytics, 
+};
