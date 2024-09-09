@@ -62,8 +62,23 @@
             <input type="text"  name="url" placeholder="Enter your long URL here" required>
             <button type="submit">Shorten URL</button>
         </form>
-        <div id="result"></div>
+
+        <% if (locals.shortid) { %>
+            <p> Short Url Genrated : http://localhost:8000/<%= shortid %></p>
+           <% } %>
+
+        <div id="result">
+           <% if (locals.shortid) { %>
+            <p> Short Url Genrated : http://localhost:8000/<%= shortid %></p>
+           <% } %>
+           
+        </div>
     </div>
 
 </body>
+<script>
+    document.getElementById('urlForm').addEventListener('submit', function(e) {
+      console.log('Form submitted');
+    });
+    </script>
 </html>

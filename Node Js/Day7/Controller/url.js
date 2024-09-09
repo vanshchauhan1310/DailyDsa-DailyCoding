@@ -13,9 +13,12 @@ async function handleGeneratedURL(req,res){
         visitHistory: [],
     })
 
-    return res.json({ id:SHORTID })
+    res.render('home',{
+        shortid: SHORTID,
+    })  
+    // return res.json({ id:SHORTID })
 
-}
+}   
 
 
 async function handleGetAnalytics (req,res){
