@@ -5,7 +5,7 @@ const db = require("./connect")
 const URL = require('./Models/url')
 const userRoute = require("./Routes/user")
 const app = express()
-const port = 8000
+const port = 8001
 
 app.set('view engine', 'ejs')
 app.set("views", path.resolve("./Views"))
@@ -27,6 +27,10 @@ app.get('/', (req, res) => {
 app.get('/signup',(req,res)=>{
  return res.render('signup')
 })
+
+app.get('/login',(req,res)=>{
+  return res.render('login')
+ })
 
 app.get('/:shortId', async (req, res) => {
   const { shortId } = req.params

@@ -32,8 +32,10 @@ async function handleUserLogIn(req, res) {
         return res.status(401).json({ error: "Invalid Email or Password" });
 
       }
+      else{
+        return res.render("home");
+      }
 
-      return res.render("home");
     } catch (error) {
       console.error("Error in handleUserSignUp:", error);
       return res.status(500).json({ error: "Internal Server Error" });
