@@ -1,4 +1,4 @@
-package BinarySearch;
+
 
 public class CelingNumber {
     public static void main(String[] args) {
