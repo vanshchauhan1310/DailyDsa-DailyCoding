@@ -1,4 +1,4 @@
-package array;
+
 import java.util.Scanner;
 public class TakeArray {
     public static void main(String[] args) {

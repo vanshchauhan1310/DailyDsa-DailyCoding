@@ -1,5 +1,5 @@
 // this is done with division operator
-package array;
+
 
 public class ProductOfArrayExceptSelf {
   public static void main(String[] args) {

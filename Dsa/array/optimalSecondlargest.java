@@ -1,4 +1,4 @@
-package array;
+
 
 public class optimalSecondlargest {
     public static void main(String[] args) {

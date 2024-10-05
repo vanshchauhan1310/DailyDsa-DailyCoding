@@ -1,4 +1,3 @@
-package array;
 
 public class Move0toEnd {
 

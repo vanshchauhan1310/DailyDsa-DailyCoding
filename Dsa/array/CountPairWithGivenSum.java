@@ -1,4 +1,3 @@
-package array;
 
 public class CountPairWithGivenSum {
     public static void main(String[] args) {

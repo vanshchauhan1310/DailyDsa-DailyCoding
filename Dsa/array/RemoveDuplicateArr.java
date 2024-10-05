@@ -1,4 +1,3 @@
-package array;
 
 public class RemoveDuplicateArr {
     public static void main(String[] args) {

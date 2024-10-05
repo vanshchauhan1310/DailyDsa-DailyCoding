@@ -1,4 +1,3 @@
-package array; // Assuming this is for organization
 
 import java.util.Scanner;
 
