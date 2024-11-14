@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 
-public class Stackusing2queue {
+public class Stackusing1queue {
 
 class Queues
 {
@@ -16,10 +16,13 @@ class Queues
 	    
       q2.add(a);
         
-        while (!q1.isEmpty()) {
-            q2.add(q1.remove());
-        }
-	    
+      int sz = q2.size()-1;
+      while(sz>0)
+      {
+        q1.add(q2.poll());
+        sz--;
+      }
+        
       Queue<Integer> temp = q1;
         q1 = q2;
         q2 = temp;
