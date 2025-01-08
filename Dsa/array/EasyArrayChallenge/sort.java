@@ -1,10 +1,12 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
 
 public class sort {
 
     
+
 
     public static void main(String[] args) {
         int[] arr = {50, 22, 84, 21, 93};
@@ -40,9 +42,6 @@ public class sort {
         // list.addAll(list2);
 
         // System.out.println(list);
-
-
-
 
 
 

@@ -26,7 +26,6 @@
             for (int i = 1; i < nums.length; i++) {
                 currentSum = Math.max(nums[i], currentSum + nums[i]);
                 
-                // Update the maximum sum if current sum is larger
                 maxSum = Math.max(maxSum, currentSum); 
         }
     
